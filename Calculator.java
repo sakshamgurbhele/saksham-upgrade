@@ -1,10 +1,9 @@
-package conditionalStatements5;
-
 import java.util.Scanner;
 
 public class Calculator {
 
 	public static void main(String[] args) {
+		System.out.println("Great Calculator");
 	
 		Scanner sc=new Scanner(System.in);
 		

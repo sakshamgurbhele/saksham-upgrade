@@ -19,28 +19,15 @@ public class Calculator {
         char operation = sc.nextLine().charAt(0);
         
         int result = 0;
+
+		switch (operation) {
+			case '+' -> result = a + b;
+			case '-' -> result = a - b;
+			case '*' -> result = a * b;
+			case '/' -> result = a / b;
+			default -> System.out.println("Operation invalid");
+		}
         
-        switch(operation) {
-        case '+':
-        	result=a+b;
-             break;
-        
-        case '-':
-        	result=a-b;
-        	 break;
-        case '*':
-        	result=a*b;
-        	break;
-        	
-        case '/':
-        	result = a/b;
-        	break;
-        	
-        	default:
-        	System.out.println("Operation invalid");
-   
-     }
-        
-   System.out.println("Your desired answer after calculaton is = "+ result);     
+   System.out.println("Your desired answer after calculation is = "+ result);
 	}      
 }
